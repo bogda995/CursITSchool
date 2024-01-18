@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pseudo Class</title>
+     <style>
+          a.super:hover {
+               color:green;
+          }
+          a:hover{
+               color:blueviolet;
+          }
+
+          body {
+               display:inline;
+               font-size: larger;
+          }
+
+          p::first-letter {
+               color: red;
+               font-size: 40px;
+          }
+
+          a[href~="index.html"] {
+               background-color:yellow;
+          }
+
+          a[target= "_blank"] {
+               border: 1px solid red;
+          }
+
+          .p3 {
+               color: green !important;
+          }
+
+          /* Inline style is more important than id and class */
+
+          #zuper {
+               color: cyan;
+          }
+
+          .zuper2 {
+               color: palevioletred;
+          }
+
+
+
+
+     </style>
+</head>
+<body>
+     <!-- TEMA TRY EVERY PSEUDO-CLASS FROM W3 SCHOOL -->
+     <h1>Pseudo class</h1>
+     <a class="super" href="index.html">Index</a>
+     <a href="index.html">Index</a>
+     <a href="_blank">Index</a>
+     <a class="amazing" href="index.html">Index</a>
+     <h4>Pseudo elements</h4>
+     <p class="p1">This is a paragraph</p>
+     <p>This is SECOND PARAGRAPH</p>
+     <p class="p3" style="color: red">This is SECOND PARAGRAPH</p>
+     <p style="color: yellowgreen" class="zuper2" id="zuper">This is SECOND PARAGRAPH ZUPER IMPORTANKT</p>
+</body>
+</html>
