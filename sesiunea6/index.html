@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+
+    <style>
+      .flexContainer {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; */
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        /* align-content:center; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        height: 500px;
+        background-color: beige;
+      }
+
+      .flexItem {
+        line-height: 40px;
+        width: 50px;
+        text-align: center;
+        background-color: aqua;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer">
+      <div class="flexItem" style="order: 4;">1</div>
+      <div class="flexItem" style="flex-basis: 120px">2</div>
+      <div class="flexItem" style="flex-shrink: 2px">3</div>
+      <div class="flexItem" style="flex-basis: 4px;">4</div>
+      <div class="flexItem">5</div>
+      <div class="flexItem" style="flex-basis: 120px;">6</div>
+      <div class="flexItem">7</div>
+      <div class="flexItem" style="align-self: center;">8</div>
+      <div class="flexItem">9</div>
+      <div class="flexItem">10</div>
+      <div class="flexItem">11</div>
+      <!--<div class="flexItem">84123</div>
+      <div class="flexItem">843</div>
+      <div class="flexItem">85</div>
+      <div class="flexItem">86</div>
+      <div class="flexItem">87</div>
+      <div class="flexItem">88</div>
+      <div class="flexItem">89</div>
+      <div class="flexItem">80</div>
+      <div class="flexItem">899</div>
+      <div class="flexItem">8999</div> -->
+    </div>
+  </body>
+</html>
